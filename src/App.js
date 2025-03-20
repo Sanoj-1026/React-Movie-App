@@ -93,7 +93,7 @@ function App() {
 const Getdata= async (searchString) => {
   try {
     const response = await axios.get(
-      `http://www.omdbapi.com/?s=${searchString}&apikey=a692dba`
+      `https://www.omdbapi.com/?s=${searchString}&apikey=a692dba`
     );
     if (response.data.Search) {
       updateMovieList(response.data.Search);
